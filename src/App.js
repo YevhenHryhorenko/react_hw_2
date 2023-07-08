@@ -57,7 +57,7 @@ function App() {
       <div className='smiles-grid'>
         {smileys.map(smiley => (
           <div key={smiley.id}>
-            <span className='smile' onClick={() => handleVote(smiley.id)}>{smiley.emoji}</span>
+            <span className='smile' onClick={() => handleVote(smiley.id)}>{smiley.emoji}:{smiley.count}</span>
           </div>
         ))}
       </div>
